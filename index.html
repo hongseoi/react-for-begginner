@@ -1,1 +1,21 @@
 <!DOCTYPE html>
+<html>
+    <body>
+        <div id='root'></div>
+    </body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script>
+        const root = document.getElementById('root');
+        const span = react.createElement(
+            "span",
+            {id:"sexy-span", style:{color:"red"}},
+            "Hello I'm a span"
+        );
+
+        const btn = react.createEmenent("button", null, "Click me");
+        React.dom.render(btn, root);
+        
+    </script>
+
+</html>
